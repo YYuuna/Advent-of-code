@@ -3,7 +3,6 @@ file = open("day2-input.txt", "r")
 lines = file.readlines()
 file.close()
 reports=[[int(level) for level in report.split()] for report in lines]
-print(reports)
 #initialize the sum
 sum = 0
 def checkSafety(report):
