@@ -2,7 +2,6 @@
 file = open("day3-input.txt", "r")
 content=file.read()
 file.close()
-
 # read valid instructions using regex
 import re
 pattern = "mul\\(\\d+,\\d+\\)|do\\(\\)|don't\\(\\)"

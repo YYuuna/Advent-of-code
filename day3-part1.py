@@ -6,10 +6,7 @@ file.close()
 import re
 pattern = "mul\\(\\d+,\\d+\\)"
 instructions = re.findall(pattern, content)
-factors = []
-# get the degits couple into a list on integers
-for insturction in instructions:
-    factors.append([int(factor) for factor in re.findall("\\d+",insturction)])
+factors = [[int(factor) for factor in re.findall("\\d+",insturction)] for insturction in instructions]
 #initialize the sum
 sum = 0
 for factor in factors:
