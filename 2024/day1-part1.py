@@ -1,6 +1,6 @@
 import numpy as np
 #read from txt file
-file = open("day1-input.txt", "r")
+file = open("2024/day1-input.txt", "r")
 lines = file.readlines()
 file.close()
 list1 = []

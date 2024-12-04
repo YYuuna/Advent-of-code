@@ -1,5 +1,5 @@
 #read content of file
-file = open("day3-input.txt", "r")
+file = open("2024/day3-input.txt", "r")
 content=file.read()
 file.close()
 #read using regex of the pattern "mul(\d+,\d+)" then split

@@ -1,5 +1,5 @@
 #read input from txt file
-file = open("day2-input.txt", "r")
+file = open("2024/day2-input.txt", "r")
 lines = file.readlines()
 file.close()
 reports=[[int(level) for level in report.split()] for report in lines]
