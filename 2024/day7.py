@@ -16,10 +16,10 @@ def evaluate(operand1,operand2,operation):
 def equationIsPossible(equation):
     result = equation[0]
     possible=False
-    for permutation in product(['+','*','||'],repeat=len(equation[1])-1):
+    for operations in product(['+','*','||'],repeat=len(equation[1])-1):
         output = equation[1][0]
         for i in range(1,len(equation[1])):
-            output = evaluate(output,equation[1][i],permutation[i-1])
+            output = evaluate(output,equation[1][i],operations[i-1])
         if output==result:
             possible=True
             break
