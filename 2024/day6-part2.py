@@ -42,7 +42,6 @@ def findGuard(area):
 
 initialPosition,guard=findGuard(area)
 
-
 def checkLoop(area,position,guard):    
     markedPatrol=[[[] for j in range(len(area))] for i in range(len(area[0]))]
     markedPatrol[position[0]][position[1]].append(guard)
@@ -67,6 +66,7 @@ def checkLoop(area,position,guard):
         else:
             markedPatrol[position[0]][position[1]].append(guard)
     return looping
+
 sum=0
 for i in range(len(area)):
     for j in range(len(area[0])):

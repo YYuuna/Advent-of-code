@@ -56,14 +56,9 @@ def findGuard(area):
             if area[i][j] in ['>','v','<','^']:
                 return [i,j],area[i][j]
     return None
-
 position,guard=findGuard(area)
-
 march(area,position,guard)
-for row in area:
-    print(row) 
 sum=0
-
 for i in range(len(area)):
     for j in range(len(area[0])):
         if area[i][j]=='X':
